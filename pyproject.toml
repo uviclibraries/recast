@@ -1,0 +1,22 @@
+[project]
+name = "recast"
+version = "0.1.0"
+description = "Restructure VLM/OCR tabular output into usable formats (CSV, TSV, Markdown)"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "pyyaml>=6.0",
+    "beautifulsoup4>=4.12",
+]
+
+[project.scripts]
+csvify = "recast.cli:main"
+formify = "recast.form_cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["recast*"]
+

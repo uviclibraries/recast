@@ -1,0 +1,24 @@
+# Quispe Serrano 2008 — archaeological material classification tables
+# Source: 199-219_QuispeSerrano2008.pdf (Peruvian excavation report, Unit U-3)
+# Each page has a separate table with the same schema; combine_all_tables merges them.
+name: quispeserrano_ceramics
+filename_patterns:
+  - "QuispeSerrano"
+  - "199-219_Quispe"
+
+combine_all_tables: true
+
+columns:
+  - UNIDAD
+  - CONTEXTO
+  - CUADRO
+  - CERAMICA
+  - HUESO ANIMAL
+  - HUESO HUMANO
+  - METAL
+  - ALABASTRO
+  - LITICOS
+  - MALACOLOGICOS
+  - MONEDA
+  - OTROS
+  - TOTAL

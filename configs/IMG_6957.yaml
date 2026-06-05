@@ -1,0 +1,18 @@
+# Historical survey repeat photo form (IMG_6957)
+# Matches: IMG_6957 (chandra or chandra-2 output)
+name: IMG_6957
+description: Repeat image data from historical survey form (Bridgeland/Lone Mt style)
+
+filename_patterns:
+  - "IMG_6957"
+
+# 4th table (index 3) is REPEAT IMAGE DATA
+table_index: 3
+
+columns:
+  - location
+  - original_photo_no
+  - repeat_photo_no
+  - azimuth
+
+expand_dittos: false

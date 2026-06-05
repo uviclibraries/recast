@@ -1,0 +1,21 @@
+# Mountain Legacy Project — Chandra / Chandra-2 output under …/datasets/MLP/…
+# Side (typed front vs Rite-in-the-Rain back) is chosen from field labels in the .md,
+# not from image filename or odd/even batching (see classify_mlp_side in converter.py).
+name: mlp
+processor: mlp_auto
+match_priority: 5
+filename_patterns:
+  - "/mlp/"
+  - "\\mlp\\"
+  - "datasets/mlp"
+  - "datasets\\mlp"
+
+table_index: -1
+expand_dittos: false
+# Applied after auto-routing to the front side (ignored for back).
+mlp_merge_front_metadata: true
+columns:
+  - location
+  - original_photo_no
+  - repeat_photo_no
+  - azimuth

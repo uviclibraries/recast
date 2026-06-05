@@ -1,0 +1,10 @@
+# Deprecated: use mlp.yaml (field-label-based front/back, filename-independent).
+# Kept so old docs that name this file still resolve to a no-match stub.
+name: mlp_repeat_survey
+filename_patterns:
+  - "__no_match__"
+columns:
+  - location
+  - original_photo_no
+  - repeat_photo_no
+  - azimuth
