@@ -10,6 +10,22 @@ Two tools:
 
 ---
 
+## GUI
+
+A browser UI covering everything below: csvify conversion (CSV / TSV / Markdown output),
+table inspection, config creation and editing, and the full formify inspect → edit → convert
+workflow.
+
+```bash
+uv sync --extra gui      # or: pip install -e ".[gui]"
+recast-gui               # opens on http://127.0.0.1:7860
+```
+
+Point it at an output folder on disk, or upload `.md` / `.html` files directly. Options:
+`--port`, `--host 0.0.0.0` (LAN access), `--share` (public gradio.live link).
+
+---
+
 ## csvify
 
 ### First time with a new document type

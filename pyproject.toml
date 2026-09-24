@@ -9,9 +9,13 @@ dependencies = [
     "beautifulsoup4>=4.12",
 ]
 
+[project.optional-dependencies]
+gui = ["gradio>=5"]
+
 [project.scripts]
 csvify = "recast.cli:main"
 formify = "recast.form_cli:main"
+recast-gui = "recast.gui:main"
 
 [build-system]
 requires = ["setuptools>=61"]
